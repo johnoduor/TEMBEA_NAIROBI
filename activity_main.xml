@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:theme="@style/AppTheme"
+    android:background="@color/colorPrimary"
+    tools:context=".MainActivity" >
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/CategoryTab"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:background="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.gogle.ndrid.gms.ads.Adview
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adview"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-6252157513695065-8851453274"></com.gogle.ndrid.gms.ads.Adview>
+
+
+</LinearLayout>
